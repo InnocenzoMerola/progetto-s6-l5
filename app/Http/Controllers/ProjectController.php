@@ -102,4 +102,14 @@ class ProjectController extends Controller
 
         return redirect()->route('projects.index')->with('deleted_success', $project);
     }
+
+    public function yourProject(Request $request){
+
+        // $projects = Project::all();
+
+        $projects = Project::where('user_id', $request->user()->id)->paginate(8);
+        return view('projects.yourProject', [
+            'projects' => $projects,
+        ]);
+    }
 }

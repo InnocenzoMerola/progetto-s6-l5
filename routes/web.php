@@ -17,11 +17,12 @@ Route::middleware('auth', 'verified')->group(function(){
     
     // Rotte PROGETTI
     Route::get('/projects/create', [ProjectController::class, 'create'])->name('projects.create');
+    Route::get('/projects/yourProject',[ProjectController::class, 'yourProject'])->name('projects.yourProject');
     Route::get('/projects/{id}/edit', [ProjectController::class, 'edit'])->name('projects.edit');
     Route::post('/projects', [ProjectController::class, 'store'])->name('projects.store');
     Route::put('/projects/{id}', [ProjectController::class, 'update'])->name('projects.update');
     Route::delete('/projects/{id}', [ProjectController::class, 'destroy'])->name('projects.destroy');
-    
+
     // Rotte ATTIVITÀ
     Route::get('/activities/create', [ActivityController::class, 'create'])->name('activities.create');
     Route::get('/activities/{id}/edit', [ActivityController::class, 'edit'])->name('activities.edit');

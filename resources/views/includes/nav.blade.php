@@ -16,6 +16,7 @@
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{{route('projects.index')}}">Lista</a></li>
                 @auth
+                <li><a class="dropdown-item" href="{{route('projects.yourProject')}}">Personali</a></li>
                 <li><a class="dropdown-item" href="{{route('projects.create')}}">Crea</a></li>
                 @endauth
             </ul>
