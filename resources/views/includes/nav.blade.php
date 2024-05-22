@@ -42,7 +42,7 @@
         </ul>
         <ul  class="navbar-nav mb-2 mb-lg-0 me-2">
             @auth
-                <li class="nav-item dropdown">
+                <li class="nav-item dropstart">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     {{Auth::user()->name}}
                     </a>
@@ -60,7 +60,7 @@
                 </li>
             @endauth
             @guest
-                <li class="nav-item dropdown">
+                <li class="nav-item dropstart">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Ospite
                     </a>
