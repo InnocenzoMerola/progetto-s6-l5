@@ -1,0 +1,24 @@
+.action-th {
+    width: 0;
+}
+
+footer {
+    background-color: black;
+    padding-block: 5rem;
+    color: white;
+    margin-top: 5rem;
+}
+
+.footer-hr {
+    width: 25rem;
+    margin-inline: auto;
+}
+
+.card-proj-name {
+    border: 2px solid black;
+    box-shadow: 5px 4px 20px 4px rgb(58 47 47);
+}
+
+.div-img-home img {
+    height: 25vh;
+}
